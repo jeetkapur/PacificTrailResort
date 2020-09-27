@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Pacific Trails Resort</title>
+    <link rel="stylesheet" type="text/css" href="pacific.css" />
+</head>
+<body>
+
+<div id="wrapper">
+    <header>
+        <h1>Pacific Trails Resort</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="yurts.html">Yurts</a></li>
+            <li> <a href="activity.html">Activities</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+        </ul>
+
+    </nav>
+
+    <main>
+        <h2>Resservations at Pacific Trail</h2>
+        <h3>Contact Us Today!</h3>
+        <form action="http://webdevbasics.net/scripts/pacific.php" method="POST">
+            <label for="firstName"> First Name:</label>
+            <input type="textbox" name="firstName" id="firstName" value="" required><br>
+
+            <label for="lastName">Last Name:</label>
+            <input type="textbox" name="lastName" id="lastName" value="" required><br>
+
+            <label for="myEmail"> E-mail:</label>
+            <input type="email" name="myEmail" id="myEmail" value="" required><br>
+
+            <label for="myPhone">Phone:</label>
+            <input type="textbox" name="myPhone" id="myPhone" value="" required><br>
+
+            <label for="myComments">Comments:</label>
+            <textarea rows="2" cols="20" name="myComments" id="myComments" value="" required></textarea>
+            <input type="submit" value="Submit">
+        </form>
+        <div class="clear">
+            <span class="resort">Pacific Trails Resorts</span><br>
+            <span class="contact"
+                  12010 Pacific Trails Road<br>
+            Zephyr, CA 95555
+            <a id="mobile" href="tel:888-555-5555"></a><br>
+            <span id="desktop">888-555-5555</span>
+            </span>
+        </div>
+    </main>
+    <footer>Copyright &copy; 2018 Path of light Yoga Studio<br>
+        <a href = "mailto: jboparai@my.wctc.edu">jboparai@my.wctc.edu</a>
+    </footer>
+</div>
+</body>
+</html>
