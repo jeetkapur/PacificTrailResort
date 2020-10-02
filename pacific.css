@@ -60,50 +60,60 @@ nav a:hover {
     width: 50%;
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 5vw);
-    grid-gap: 15px;
+.akk img {
+    width: calc(100% - (20px * 2));
+    margin: 20px;
+}
+
+
+
+#gallery {
     position: relative;
-    list-style-type: none;
     height: 200px;
+    text-align: left;
+    color: black;
 }
-figure{
-    position: absolute;
-    left: 280px;
-    text-align: center;
-    opacity: .25;
-}
-.gallery ul{
-    width: 200px;
+
+#gallery ul {
     list-style-type: none;
+    width: 300px;
 }
-.gallery li{
+
+#gallery li {
     display: inline;
     float: left;
     padding: 10px;
 }
-.gallery img{
-    border: none;
+
+#gallery img {
+    border-style: none;
 }
-.gallery a{
+
+#gallery a {
+    text-decoration: none;
     font-style: italic;
-    color: #EAEAEA;
-    text-underline: none;
+    color: black;
 }
-.gallery span{
+
+#gallery span {
     position: absolute;
     left: -1000px;
     opacity: 0;
-    transition: opacity 3s ease-in-out;
+    transition:  opacity 1s ease-in-out;
 }
-.gallery a:hover span{
-    position:absolute;
-    top:16px;
-    left:320px;
+
+#gallery a:hover span {
+    position: absolute;
+    top: 16px;
+    left: 320px;
     text-align: center;
     opacity: 1;
+}
+
+figure {
+    position: absolute;
+    left: 280px;
+    text-align: center;
 }
 .test:hover{
     transform: scale(1.5);
@@ -149,10 +159,13 @@ footer{
     padding:20px;
     margin-left: 190px;
     background-color: #FFFFFF;
-    float: none;
+    /*float: none;*/
+    clear: both;
 }
 #wrapper{
-    align-content: center;
+    /*align-content: center;*/
+    margin-left: auto;
+    margin-right:auto;
     width: 80%;
     min-width: 960px;
     max-width: 2048px;
